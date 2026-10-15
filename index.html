@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Happy Birthday</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Pacifico&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+  <!-- Floating hearts -->
+  <div
+    class="hearts"
+    aria-hidden="true"
+  ></div>
+
+
+  <!-- =====================================
+       🔐 PASSCODE SCREEN
+  ====================================== -->
+
+  <section
+    id="lock-screen"
+    class="screen lock-screen"
+  >
+
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+
+
+    <div class="lock-content">
+
+      <p class="tiny-title">
+        Hi Người đẹp 😘
+      </p>
+
+
+      <!-- PASSCODE IMAGE -->
+
+      <div class="passcode-photo">
+
+        <img
+          src="assets/passcode.jpg"
+          alt="Birthday surprise"
+        >
+
+      </div>
+
+
+      <h1>
+        Có cái gì đó<br>
+        đang chờ Bel...
+      </h1>
+
+
+      <p class="hint">
+        Bấm mật khẩu để vào nhoa
+      </p>
+
+
+      <!-- 6 DIGIT DISPLAY -->
+
+      <div
+        id="code-display"
+        class="code-display"
+        aria-label="6 digit passcode"
+      >
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </div>
+
+
+      <!-- NUMBER KEYPAD -->
+
+      <div class="keypad">
+
+        <button data-number="1">1</button>
+        <button data-number="2">2</button>
+        <button data-number="3">3</button>
+
+        <button data-number="4">4</button>
+        <button data-number="5">5</button>
+        <button data-number="6">6</button>
+
+        <button data-number="7">7</button>
+        <button data-number="8">8</button>
+        <button data-number="9">9</button>
+
+        <button
+          class="empty-key"
+          tabindex="-1"
+          aria-hidden="true"
+        ></button>
+
+        <button data-number="0">0</button>
+
+        <button
+          id="delete-btn"
+          class="delete-key"
+          aria-label="Delete"
+        >
+          ⌫
+        </button>
+
+      </div>
+
+
+      <!-- ENTER -->
+
+      <button
+        id="enter-btn"
+        class="enter-btn"
+      >
+         <span>→</span>
+      </button>
+
+
+      <p
+        id="wrong-code"
+        class="wrong-code"
+      >
+        Vậy mà cũng quên nữa!!
+      </p>
+
+
+      <p class="secret-note">
+        nhỏ nhỏ thôi nha, hú hồn đó
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================
+       🎂 BIRTHDAY PAGE
+       hidden = ban đầu sẽ KHÔNG hiện
+  ====================================== -->
+
+  <main
+    id="birthday-page"
+    class="birthday-page hidden"
+  >
+
+
+    <!-- =================================
+         HERO
+    ================================== -->
+
+    <section class="hero section">
+
+      <p class="eyebrow">
+        Coi cho hết nhaaa ♡
+      </p>
+
+
+      <div class="hero-gif-frame">
+
+        <span class="ribbon">
+          🎀
+        </span>
+
+
+        <video
+          src="assets/birthday.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+          aria-label="Birthday video"
+        ></video>
+
+      </div>
+
+
+      <h2>
+        Happy Birthday BelPy💕
+      </h2>
+
+
+      <div class="divider">
+        ♡ ───── ♡ ───── ♡
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         💌 LETTER
+    ================================== -->
+
+    <section class="letter-section section">
+
+      <div class="letter-card">
+
+        <span class="tape tape-left"></span>
+        <span class="tape tape-right"></span>
+
+
+        <p class="letter-greeting">
+          Gửi đến Chị ba , 
+        </p>
+
+
+        <p>
+          Hôm nay là sinh nhật của chị 3. Em chúc
+          bel lúc nào cũng vui cười, làm thật nhiều
+          tiền để cho mẹ và em được lãnh lương :>
+        </p>
+
+
+        <p>
+          Em mong công việc của bel luôn suôn sẻ
+          thuận lợi để chị ba có thời gian ở nhà
+          với gia đình nhiều hơn, ăn cơm cùng nhau
+          nữaaa.  
+        </p>
+
+        <p>
+          Cô ấy tuổi mới ít tức giận lại, ăn uống
+          nhiều zô, ốm quá dòi😭. Recently, em
+          với bel ít thời gian giỡn với nói chuyện
+          với nhau. Chị 3 về nhà là em ngủ mất tiêu
+          rồi.
+        </p>
+
+
+        <p>
+          Bel hồi này xanh xao quá, em lo đóoo
+        </p>
+
+
+        <p>
+          Yêu công việc và gia đình. Đừng quên 
+          iu bản thânn nha!! 
+        </p>
+
+
+        <p>
+          Cuối tuần dành thời gian ở nhà nhaaa
+        </p>
+
+
+        <p>
+          Về nhà sơm để em chụt chụt chị  3 nữa
+        </p>
+
+
+        <p>
+          Nhớ nhaaaa
+        </p>
+
+
+        <p>
+          Tích cực, dui dẻ lên. Có Meo với mẹ ở đây
+          hong có buồn dới áp lực.
+        </p>
+
+
+        <p class="letter-ending">
+
+          Happy Birthday, Bel iu cụa e ♡
+
+          <br><br>
+
+          Moaz moaz
+
+        </p>
+
+
+        <div class="signature">
+          lợp du hjhj 
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         📸 MEMORIES
+    ================================== -->
+
+    <section class="memories section">
+
+      <p class="eyebrow">
+       Chút xíu kỉ niệm 
+      </p>
+
+
+      <h2>
+        Our Little Moments
+      </h2>
+
+
+      <p class="memory-subtitle">
+        6 hình em chụp cùng Bel
+      </p>
+
+
+      <div class="gallery">
+
+
+        <figure class="memory-card">
+
+          <img
+            src="assets/memory1.jpg"
+            alt="Memory 1"
+          >
+
+          <figcaption>
+            Hồi nhỏ á
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="memory-card">
+
+          <img
+            src="assets/memory2.jpg"
+            alt="Memory 2"
+          >
+
+          <figcaption>
+            My & Bel
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="memory-card">
+
+          <img
+            src="assets/memory3.jpg"
+            alt="Memory 3"
+          >
+
+          <figcaption>
+            
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="memory-card">
+
+          <img
+            src="assets/memory4.jpg"
+            alt="Memory 4"
+          >
+
+          <figcaption>
+            ỏ cuti
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="memory-card">
+
+          <img
+            src="assets/memory5.jpg"
+            alt="Memory 5"
+          >
+
+          <figcaption>
+            vìa ngoại 😆
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="memory-card">
+
+          <img
+            src="assets/memory6.jpg"
+            alt="Memory 6"
+          >
+
+          <figcaption>
+            Đi quẩyyy
+          </figcaption>
+
+        </figure>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         💗 FINAL
+    ================================== -->
+
+    <section class="final section">
+
+      <div class="final-decoration cake">
+        🎂
+      </div>
+
+
+      <div class="final-decoration flowers">
+        🌷
+      </div>
+
+
+      <p class="tiny-title">
+        Once more time
+      </p>
+
+
+      <h2>
+        Chúc mừng sinh nhật Py iu ♡
+      </h2>
+
+
+      <div class="final-wish">
+
+        <p>
+          Hope you have a pretty day,
+        </p>
+
+        <p>
+          Happy,
+        </p>
+
+        <p>
+          Always smle,
+        </p>
+
+        <p>
+          Bring me go to everywheree
+
+        <br>
+
+        <p>
+          <strong>
+            Em iu Bel nhiều! ♡
+          </strong>
+        </p>
+
+      </div>
+
+
+      <div class="divider">
+        ♡ ───── ♡ ───── ♡
+      </div>
+
+
+      <p class="final-small">
+        from Út Meo của Bel
+      </p>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
